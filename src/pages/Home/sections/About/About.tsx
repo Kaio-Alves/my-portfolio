@@ -1,6 +1,7 @@
 import SchoolIcon from '@mui/icons-material/School';
 import WorkspacePremiumIcon from '@mui/icons-material/WorkspacePremium';
 import { Container, Grid, Typography, styled } from "@mui/material";
+import { useTypewriter } from 'react-simple-typewriter';
 const About = () => {
     const StyledAbout = styled("div")(({theme})=> ({
         backgroundColor:theme.palette.primary.contrastText,
@@ -11,13 +12,19 @@ const About = () => {
     const StyledAbouts = styled("div")(({})=> ({
         marginLeft:"300px"
     }));
+    const [text] = useTypewriter({
+        words: ['bout me'],
+        loop:true,
+        typeSpeed:200,
+        delaySpeed:5000
+    });
     return (
       <>
       <StyledAbout>
         <Container maxWidth="lg" >
             <Grid container spacing={2} >
                 <Grid item xs={12} md={12} >
-                    <Typography  variant="h2" textAlign="center" pb={2}>About me</Typography>
+                    <Typography  variant="h2" textAlign="center" pb={2}>A{text}</Typography>
                     <StyledAbouts>
                         <Grid container item xs={12} md={8} justifyItems="center" justifyContent="space-evenly">
                             <Grid item xs={12} md={4} pb={6} style={{border: '1px solid #DCDCDC'}}>

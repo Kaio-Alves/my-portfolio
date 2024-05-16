@@ -1,6 +1,6 @@
 import { Container, Grid, Typography, styled } from "@mui/material";
+import { useTypewriter } from 'react-simple-typewriter';
 import StyledSkills from "../../../../components/StyledSkills/StyledSkills";
-
 
 const Skills = () => {
     const StyledSkillss = styled("div")(({theme})=> ({
@@ -10,12 +10,18 @@ const Skills = () => {
         alignItems:"center"
     }));
 
+    const [text] = useTypewriter({
+        words: ['kills'],
+        loop:true,
+        typeSpeed:200,
+        delaySpeed:8000
+    });
     return (
       <>
       <StyledSkillss>
       <Container maxWidth="lg" >
         <Grid item xs={12} md={12} >
-            <Typography  variant="h2" textAlign="center" pb={2}>Skills</Typography>
+            <Typography  variant="h2" textAlign="center" pb={2}>S{text}</Typography>
             <Grid item xs={12} md={4} display="block" justifyContent="center" style={{marginTop:"-20px"}}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                     <StyledSkills>

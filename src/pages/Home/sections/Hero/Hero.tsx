@@ -3,6 +3,7 @@
 import DownloadIcon from '@mui/icons-material/Download';
 import MailOutlineIcon from '@mui/icons-material/MailOutline';
 import { Box, Container, Grid, Typography, styled } from "@mui/material";
+import { Cursor } from 'react-simple-typewriter';
 import Avatar from "../../../../assets/images/perfil.jpg";
 import { AnimatedBackground } from '../../../../components/AnimatedBackground/AnimatedBackground';
 import StyledButton from '../../../../components/StyledButton/StyledButton';
@@ -24,6 +25,7 @@ const Hero = () => {
         borderRadius:"50%",
         border:`1px solid ${theme.palette.primary.contrastText}`
     }));
+   
     return (
       <>
         <StyledHero>
@@ -41,7 +43,7 @@ const Hero = () => {
                     </Grid>
                     <Grid item xs={12} md={7}>
                         <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Kaio Alves</Typography>
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center">I'm a Software Engineer</Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="center" position="relative">I'm a Software Engineer<Cursor/></Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pb={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
                                 <StyledButton onClick={()=> console.log("download")}>
