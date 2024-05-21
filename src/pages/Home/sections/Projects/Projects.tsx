@@ -4,7 +4,7 @@ import { useTypewriter } from "react-simple-typewriter";
 
 const Projects = () => {
     const url = 'https://mybankinter.netlify.app/'; // Substitua pela URL desejada
-    const previewImage = "/public/img/VideoInterCard.gif"; // Substitua pela URL da imagem de pré-visualização
+    const previewImage = "/img/VideoInterCard.gif"; // Substitua pela URL da imagem de pré-visualização
     const StyledProjects = styled("div")(({theme})=> ({
         backgroundColor:theme.palette.primary.main,
         marginTop:"110px",
