@@ -1,10 +1,13 @@
-import { Container, Grid, Typography, styled } from "@mui/material"
+import { Card, CardActionArea, CardMedia, Container, Grid, Typography, styled } from "@mui/material";
 import { useTypewriter } from "react-simple-typewriter";
 
 
 const Projects = () => {
+    const url = 'https://mybankinter.netlify.app/'; // Substitua pela URL desejada
+    const previewImage = "/public/img/VideoInterCard.gif"; // Substitua pela URL da imagem de pré-visualização
     const StyledProjects = styled("div")(({theme})=> ({
         backgroundColor:theme.palette.primary.main,
+        marginTop:"110px",
         height:"100vh",
         display:"flex",
         alignItems:"center",
@@ -27,9 +30,23 @@ const Projects = () => {
         
         <StyledProjects>
             <Container maxWidth="lg" >
-                <Grid container spacing={2} style={{marginTop:"-350px"}}>
+                <Grid container spacing={2} style={{marginTop:"-250px"}}>
                     <Grid item xs={12} md={12} >
-                        <Typography color="primary.contrastText" variant="h2" textAlign="center" pb={2}>P{text}</Typography>
+                        <Typography color="primary.contrastText" variant="h2" textAlign="center" style={{marginTop:"80px"}} pb={2}>P{text}</Typography>
+                        <Grid display={"block"}>
+                        <Card style={{ width: 150, height: 150 , marginLeft:"500px",marginTop:"150px"}}>
+                            <CardActionArea onClick={() => window.open(url, '_blank')}>
+                            <CardMedia
+                                component="img"
+                                alt="Pré-visualização"
+                                height="150"
+                                image={previewImage}
+                                title="My Bank"
+                                style={{marginLeft:"-102px",width:"250px",marginTop:"2px"}}
+                            />
+                            </CardActionArea>
+                        </Card>
+                        </Grid>
                     </Grid>
                 </Grid>
             </Container>
