@@ -11,9 +11,9 @@ const NavBar = () => {
       <>
         <AppBar position="absolute">
             <StyledToobar>
-                <MenuItem>About</MenuItem>
+                {/* <MenuItem>About</MenuItem>
                 <MenuItem>Skills</MenuItem>
-                <MenuItem>Projects</MenuItem>
+                <MenuItem>Projects</MenuItem> */}
             </StyledToobar>
             
         </AppBar>

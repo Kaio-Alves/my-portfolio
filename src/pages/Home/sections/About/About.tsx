@@ -35,7 +35,7 @@ const About = () => {
                             <Grid item xs={12} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
                                 <WorkspacePremiumIcon style={{marginLeft:"72px",height:"6vh"}}/>
                                 <Typography variant="h6" textAlign="center" style={{fontWeight:"bold",marginTop:"-10px"}}>Experience</Typography>
-                                <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>3+ years</Typography>
+                                <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>3 years</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>Full-Stack Developer</Typography>
                             </Grid>
                             </animated.div>
@@ -54,6 +54,8 @@ const About = () => {
                         I am a curious person, looking for challenges, I am never complacent.
                         I like working in a team, being very proactive, I can interact well with people, leaving the environment lighter, 
                         dealing well with constructive criticism and always seeking to evolve.
+                    </Typography>
+                    <Typography variant="h6" textAlign="center" style={{marginTop:"20px"}}>I am currently taking Japanese language proficiency classes, with a native Japanese teacher, where I have interactions in English and Japanese every week  🎌|🗽.
                     </Typography>
                     <Typography>_______________________________________________________________________________________________________________________________________________</Typography>
                 </Grid>
