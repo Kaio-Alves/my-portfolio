@@ -21,7 +21,7 @@ const Skills = () => {
       <StyledSkillss>
       <Container maxWidth="lg" >
         <Grid item xs={12} md={12} >
-            <Typography  variant="h2" textAlign="center" pb={2}>S{text}</Typography>
+            <Typography style={{marginTop:"200px"}}  variant="h2" textAlign="center" pb={2}>S{text}</Typography>
             <Grid item xs={12} md={4} display="block" justifyContent="center" style={{marginTop:"-20px"}}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                     <StyledSkills>

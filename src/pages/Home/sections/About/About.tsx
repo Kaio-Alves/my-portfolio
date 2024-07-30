@@ -28,7 +28,7 @@ const About = () => {
         <Container maxWidth="lg" >
             <Grid container spacing={2} >
                 <Grid item xs={12} md={12} >
-                    <Typography  variant="h2" textAlign="center" pb={2}>A{text}</Typography>
+                    <Typography style={{marginTop:"100px"}} variant="h2" textAlign="center" pb={2}>A{text}</Typography>
                     <StyledAbouts>
                         <Grid container item xs={12} md={8} justifyItems="center" justifyContent="space-evenly">
                             <animated.div style={StyledLeftRight}>
