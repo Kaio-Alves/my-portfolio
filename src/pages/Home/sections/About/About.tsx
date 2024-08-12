@@ -33,7 +33,7 @@ const About = () => {
                         <Grid container item xs={12} md={8} justifyItems="center" justifyContent="space-evenly">
                             <animated.div style={StyledLeftRight}>
                             <Grid item xs={12} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
-                                <WorkspacePremiumIcon style={{marginLeft:"72px",height:"6vh"}}/>
+                                <WorkspacePremiumIcon style={{marginLeft:"82px",height:"6vh"}}/>
                                 <Typography variant="h6" textAlign="center" style={{fontWeight:"bold",marginTop:"-10px"}}>Experience</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>3 years</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>Full-Stack Developer</Typography>
@@ -41,7 +41,7 @@ const About = () => {
                             </animated.div>
                             <animated.div style={StyledRightLeft}>
                             <Grid item xs={12} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
-                                <SchoolIcon style={{marginLeft:"66px",height:"6vh"}}/>
+                                <SchoolIcon style={{marginLeft:"78px",height:"6vh"}}/>
                                 <Typography variant="h6" textAlign="center" style={{fontWeight:"bold",marginTop:"-10px"}}>Education</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>Bachelor's degree</Typography>
                                 <Typography  variant="h6" textAlign="center" style={{marginTop:"-10px"}}>Computer Engineer</Typography>
