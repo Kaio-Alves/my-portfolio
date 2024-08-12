@@ -59,7 +59,7 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h2" textAlign="center" position="relative">I'm a Software Engineer<Cursor/></Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pb={3}>
                             <Grid item xs={12} md={4} display="flex" justifyContent="center">
-                            <a href="/src/pages/Home/sections/Hero/KaioAlvesTorresCV.pdf" download="KaioAlvesTorresCV.pdf">
+                            <a href="/img/KaioAlvesTorresCV.pdf" download="KaioAlvesTorresCV.pdf">
                                 <StyledButton onClick={handleDownload}>
                                     <DownloadIcon/> 
                                      <Typography>
