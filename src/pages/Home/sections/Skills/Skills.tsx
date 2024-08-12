@@ -7,7 +7,24 @@ const Skills = () => {
         backgroundColor:theme.palette.primary.contrastText,
         height:"70vh",
         display:"flex",
-        alignItems:"center"
+        alignItems:"center",
+        marginTop:"170px",
+        [theme.breakpoints.up('xs')]:{
+            "& #skillsItens": {
+                maxWidth:"87%",
+             },
+             "& #titleSkill": {
+                marginLeft:"-40px",
+             },
+        },
+        [theme.breakpoints.up('md')]:{
+            "& #skillsItens": {
+                maxWidth:"100%",
+             },
+             "& #titleSkill": {
+                marginLeft:"0px",
+             },
+        },
     }));
 
     const [text] = useTypewriter({
@@ -20,9 +37,9 @@ const Skills = () => {
       <>
       <StyledSkillss>
       <Container maxWidth="lg" >
-        <Grid item xs={12} md={12} >
-            <Typography style={{marginTop:"200px"}}  variant="h2" textAlign="center" pb={2}>S{text}</Typography>
-            <Grid item xs={12} md={4} display="block" justifyContent="center" style={{marginTop:"-20px"}}>
+        <Grid item xs={12} md={12} > 
+            <Typography id="titleSkill" style={{marginTop:"200px"}}  variant="h2" textAlign="center" pb={2}>S{text}</Typography>
+            <Grid id="skillsItens" item xs={12} md={4} display="block" justifyContent="center" style={{marginTop:"-20px"}}>
                 <Grid item xs={12} md={4} display="flex" justifyContent="center">
                     <StyledSkills>
                         <Typography variant="h6" textAlign="center" pb={1}>React</Typography>

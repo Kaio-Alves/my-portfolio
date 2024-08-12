@@ -58,7 +58,7 @@ const Hero = () => {
                         <Typography color="primary.contrastText" variant="h1" textAlign="center" pb={2}>Kaio Alves</Typography>
                         <Typography color="primary.contrastText" variant="h2" textAlign="center" position="relative">I'm a Software Engineer<Cursor/></Typography>
                         <Grid container display="flex" justifyContent="center" spacing={3} pb={3}>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                            <Grid item xs={5} md={4} display="flex" justifyContent="center">
                             <a href="/img/KaioAlvesTorresCV.pdf" download="KaioAlvesTorresCV.pdf">
                                 <StyledButton onClick={handleDownload}>
                                     <DownloadIcon/> 
@@ -68,7 +68,7 @@ const Hero = () => {
                                 </StyledButton>
                                 </a>
                             </Grid>
-                            <Grid item xs={12} md={4} display="flex" justifyContent="center">
+                            <Grid item xs={5} md={4} display="flex" justifyContent="center">
                                 <StyledButton onClick={handleScroll}>
                                     <MailOutlineIcon/> 
                                     <Typography>

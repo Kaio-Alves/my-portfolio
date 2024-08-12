@@ -11,7 +11,44 @@ const About = () => {
         backgroundColor:theme.palette.primary.contrastText,
         height:"60vh",
         display:"flex",
-        alignItems:"center"
+        alignItems:"center",
+        [theme.breakpoints.up('xs')]:{
+            marginTop:"280px",
+            maxWidth:"60%",
+            "& #boxAbout": {
+                marginLeft:"-220px", // Aplicar display flex apenas para o ID específico
+                display:"block",
+
+             },
+             "& #titleAbout": {
+                marginLeft:"-430px",
+                
+             },
+             "& .textAbout": {
+                maxWidth:"40%",
+                marginLeft:"20px",
+               
+             },
+             
+            
+        },
+        [theme.breakpoints.up('md')]:{
+            maxWidth:"100%",
+            marginTop:"60px",
+            "& #boxAbout": {
+                marginLeft:"10px", // Aplicar display flex apenas para o ID específico
+                display:"flex",
+             },
+             "& #titleAbout": {
+                marginLeft:"-10px", // Aplicar display flex apenas para o ID específico
+             },
+             "& .textAbout": {
+                maxWidth:"100%",
+                marginLeft:"20px",
+               
+             },
+        }
+        
     }));
     const StyledAbouts = styled("div")(({})=> ({
         marginLeft:"300px"
@@ -27,12 +64,12 @@ const About = () => {
       <StyledAbout>
         <Container maxWidth="lg" >
             <Grid container spacing={2} >
-                <Grid item xs={12} md={12} >
-                    <Typography style={{marginTop:"100px"}} variant="h2" textAlign="center" pb={2}>A{text}</Typography>
+                <Grid item xs={40} md={12} >
+                    <Typography id="titleAbout" style={{marginTop:"100px"}} variant="h2" textAlign="center" pb={2}>A{text}</Typography>
                     <StyledAbouts>
-                        <Grid container item xs={12} md={8} justifyItems="center" justifyContent="space-evenly">
+                        <Grid container item xs={20} md={8} justifyItems="center" justifyContent="space-evenly"  id="boxAbout">
                             <animated.div style={StyledLeftRight}>
-                            <Grid item xs={12} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
+                            <Grid item xs={5} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
                                 <WorkspacePremiumIcon style={{marginLeft:"82px",height:"6vh"}}/>
                                 <Typography variant="h6" textAlign="center" style={{fontWeight:"bold",marginTop:"-10px"}}>Experience</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>3 years</Typography>
@@ -40,7 +77,7 @@ const About = () => {
                             </Grid>
                             </animated.div>
                             <animated.div style={StyledRightLeft}>
-                            <Grid item xs={12} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
+                            <Grid item xs={5} md={12} pb={6} style={{border: '1px solid #DCDCDC',padding:"20px"}}>
                                 <SchoolIcon style={{marginLeft:"78px",height:"6vh"}}/>
                                 <Typography variant="h6" textAlign="center" style={{fontWeight:"bold",marginTop:"-10px"}}>Education</Typography>
                                 <Typography variant="h6" textAlign="center" style={{marginTop:"-10px"}}>Bachelor's degree</Typography>
@@ -50,14 +87,16 @@ const About = () => {
                         </Grid>
                        
                     </StyledAbouts>
-                    <Typography  variant="h6" textAlign="center" style={{marginTop:"20px"}}>
+                    <Typography className="textAbout"  variant="h6" textAlign="center" style={{marginTop:"20px"}}>
                         I am a curious person, looking for challenges, I am never complacent.
                         I like working in a team, being very proactive, I can interact well with people, leaving the environment lighter, 
                         dealing well with constructive criticism and always seeking to evolve.
                     </Typography>
-                    <Typography variant="h6" textAlign="center" style={{marginTop:"20px"}}>I am currently taking Japanese language proficiency classes, with a native Japanese teacher, where I have interactions in English and Japanese every week  🎌|🗽.
+                    <Typography className="textAbout" variant="h6" textAlign="center" style={{marginTop:"20px"}}>I am currently taking Japanese language proficiency classes, with a native Japanese teacher, where I have interactions in English and Japanese every week  🎌|🗽.
                     </Typography>
-                    <Typography>_______________________________________________________________________________________________________________________________________________</Typography>
+                    <Typography id="textLineAboutMd" style={{marginTop:"130px"}}>________________________________________________________________________________________________________________________________________________________</Typography>
+
+                    
                 </Grid>
             </Grid>
             
